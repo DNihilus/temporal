@@ -1,0 +1,191 @@
+				INMA Entertainment presenta
+		                   Tank's Massacre 1.0
++++++++++++++++++++++++++++++++++++++++++++++++++
+	Contenido:
+
+1.- Requerimientos Mínimos del Sistema.
+2.- Explicación de generalidades.
+3.- Controles.
+4.- Editor de mapas.
+5.- Problemas conocidos.
+6.- Estrategias.
+
+------------------------------------------------------
+
+	1.- Requerimientos Mínimos del Sistema.
+
+Tank's Massacre es un Applet de java, por consiguiente, es necesario poseer
+un navegador que soporte este tipo de aplicaciones. 
+
+O tener instalado el appletviewer de java. En este caso, para poder inicializar el
+juego se deberá teclear el siguiente comando en MS-DOS
+
+	appletviewer C:\carpetas\TanksMassacre.html
+
+donde "carpetas" es (son) el (los) directorio(s) donde se encuentra el archivo
+TanksMassacre.html y TanksMassacre.class
+
+---------------------------------------------------------
+
+	2.- Generalidades
+
+1.- Introduccción
+ 	El juego consta de 2 a 4 tanques movilizados por jugadores (aún no hay AI), y el
+	propósito es dispar y destruir el mayor número de éstos posible con el tanque
+	seleccionado.
+
+2.- Suelos
+     existen 5 tipos distintos de suelo:
+
+	a) Suelo normal
+		Es de color gris y permite el libre paso sin mayores complicaciónes, y es
+		sobre este, en el cual irán apareciendo las reliquias y los jugadores
+		nuevos o revividos
+
+	b) Pasto
+		Es de color verde y de igual forma permite el libre paso
+
+	c) Ladrillos
+		Son de color naranja, impiden el paso de los tanques y de los disparos,
+		pero pueden ser	destruidos con 3 disparos
+
+	d) Metal 
+		De color plata, tambien impiden el paso de tanques y de disparos, pero no pueden 
+		ser destruidos
+
+	e) Agua
+		El agua impide el paso de los tanques, pero permite el de los disparos
+
+3.- Regla sobre los disparos
+	Solo se puede tener un disparo en el viento a la vez, es decir que no se
+	podrá disparar nuevamente hasta el el anterior disparo se impacte contra algo
+
+4.- Reliquias
+
+	|------|
+	| ---- |  Defensa:
+	| |  | |	Con ella se puede resistir un disparo, o se puede sobrevivir
+	| \__/ |	a la reliquia de venganza
+	|------|
+
+	|------|
+	|  (//)|  Ataque:
+	|  //  |	Esta permite que el disparo vaya más rápido de lo normal
+	| //   |	
+	|------|
+
+	|------|
+	|  .'/ |  Velocidad:
+	|.: /. |	Con ella el taque se movera más rápido
+	| /.'  |	
+	|------|
+
+	|------|
+	| /''\ |  Venganza:
+	|( OO )|	Cuando se porta esta reliqua, al momento de ser golpeado por un 
+	| |¬¬| | 	disparo enemigo, se desata una explosión grandiosa que daña
+	|------|	a los tanques cercanos
+
+
+------------------------------------------------------
+
+	3.- Controles.
+
+Este Applet puede ser utilizado por 4 jugadores de manera sumultánea en el mismo
+teclado, por lo que se ha intentado distribuir de manera adecuada estos controles:
+
+Jugador 1:
+
+	arriba 		=  arrowUp
+	abajo		=  arrowDown
+	derecha 	=  arrowRight
+	izquierda	=  arrowLeft
+	disparo		=  CONTROL
+
+Jugador 2:
+
+	arriba 		=  W
+	abajo		=  S
+	derecha 	=  D
+	izquierda	=  A
+	disparo		=  SHIFT
+
+Jugador 3:
+
+	arriba 		=  T
+	abajo		=  G
+	derecha 	=  H
+	izquierda	=  F
+	disparo		=  SPACE
+
+Jugador 4:
+
+	arriba 		=  9
+	abajo		=  I
+	derecha 	=  O
+	izquierda	=  U
+	disparo		=  0
+
+nuevo juego en una mapa Random 	= F5
+
+abrir el editor de mapas 		= F9
+
+cerrar el editor de mapas y
+jugar en el mapa editado 		= F10
+
+entrada de nuevo jugador = F11
+
+salida de un jugador	 = F12
+
+---------------------------------------------------------
+	4.- Editor de Mapas
+
+---------------------------------------------------------
+
+	5.- Problemas Conocidos
+
+a) 	Este juego genera mapas aleatoria y automáticamente cada vez que se inicia, por lo que
+	cabe la posibilidad de que uno de los tanques quede encerrado entre bloques o agua. 
+	si este es el caso basta con símplemente actualizar la página o reiniciar el 
+	appletviewer el número de veces que asi se requiera.
+
+b)	Dado que en éste juego se utiliza un sólo teclado para los 4 jugadores simultáneos
+	podrían exister conflictos en el mismo. Como por ejemplo:
+		si el jugador 2 presiona las teclas 'W' y 'D' o 'S' y 'D' al mismo tiempo
+		el jugador 1 no podrá presionar la tecla de dirección a la izquierda.
+	por lo que se recomienda tratar de evitar movimientos en diagonal.
+
+c)	Puede ser que no se logre escuchar los efectos especiales del juego, como son 
+	disparos o explosiones, asi que se recomienda poseer compatibilidad con archivos
+	de sonido wav, que son los utilizados por este Applet.
+
+---------------------------------------------------------
+
+	6.- Estrategias
+
+Trata de tomar el mayor numero de reliquias, ya que son acumulables en el sentido
+que puedes tener dos o más reliquias diferentes, pero no más de una de cada tipo.
+aún asi, si ya tienes una reliquia, toma las que vayan saliendo
+sean o no del mismo tipo, porque te previenes de que el resto de los jugadores las tomen.
+
+Una vez que tengas la reliquia de venganza es buena idea acercarte al matadero! =D
+mientras más tanques haya alrededor de tí cuando explotes, más puntuación obtendrás
+y más divertido serán los juegos artificiales je je.
+
+Si eres el jugador 3 o 4, y te quedas encerrado en algún lugar sin salida, puedes
+presionar f12 y luego f11 para salir de ahi.
+
+El resto de las estrategias las podrás ir obteniendo en el campo de batalla ;).
+
+---------------------------------------------------------
+
+puede enviar sus comentarios a Arzáquel Anzures a:
+
+	rainard09@hotmail.com
+	infernosrainard@yahoo.com
+
+gracias por su preferencia, A JUGAR!.
+
+----------------------------------------------------------
+
+
