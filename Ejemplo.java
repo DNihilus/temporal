@@ -4,6 +4,8 @@
  * a un constructor parametrizado 
  */
 
+// PEQUEÑO CAMBIO
+
 // Clase MiClase
 class MiClase {
 	/* ATRIBUTOS */
